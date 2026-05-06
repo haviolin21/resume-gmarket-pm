@@ -1,0 +1,28 @@
+.about-content {
+  background-color: var(--bg-alt);
+  padding: 40px;
+  border-radius: 16px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-text.highlight {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 30px 20px;
+  }
+}

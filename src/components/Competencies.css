@@ -1,0 +1,54 @@
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.comp-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-color: rgba(0, 183, 0, 0.2);
+}
+
+.comp-icon {
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.comp-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.comp-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comp-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.comp-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}

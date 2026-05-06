@@ -1,0 +1,115 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.project-header {
+  background-color: var(--bg-alt);
+  padding: 25px 30px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-header h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.project-period {
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+  background-color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.project-body {
+  padding: 30px;
+}
+
+.project-section {
+  margin-bottom: 25px;
+}
+
+.project-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.section-heading.problem {
+  background-color: rgba(255, 59, 48, 0.1);
+  color: #ff3b30;
+}
+
+.section-heading.execution {
+  background-color: rgba(0, 122, 255, 0.1);
+  color: #007aff;
+}
+
+.section-heading.result {
+  background-color: rgba(0, 183, 0, 0.1);
+  color: var(--accent-hover);
+}
+
+.project-section p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-section ul {
+  padding-left: 0;
+}
+
+.project-section li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-section li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 768px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

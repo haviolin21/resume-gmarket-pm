@@ -1,0 +1,72 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px; /* Offset for sticky header */
+  background: linear-gradient(to bottom right, #ffffff, #f0fdf4);
+}
+
+.hero-container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.pitch {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: 10px 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a.contact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 183, 0, 0.15);
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .name { font-size: 3.5rem; }
+  .pitch { font-size: 1.1rem; }
+  .contact-info { flex-direction: column; gap: 10px; }
+}
