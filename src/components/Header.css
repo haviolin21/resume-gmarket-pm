@@ -43,3 +43,30 @@
 .nav a:hover {
   color: var(--accent-color);
 }
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 15px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .nav {
+    gap: 12px;
+  }
+  .nav a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .nav {
+    gap: 8px;
+  }
+  .nav a {
+    font-size: 0.75rem;
+  }
+}
