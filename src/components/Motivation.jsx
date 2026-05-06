@@ -28,7 +28,7 @@ const Motivation = () => {
               또한 지마켓 DNA 중 <strong className="highlight">‘모든 일의 시작과 끝에는 고객이 있어야 한다’</strong>는 원칙에도 깊이 공감했습니다. 
               결국 커머스에서 가장 중요한 것은 고객이며, 고객 경험을 중심으로 끊임없이 서비스를 개선하는 플랫폼이 장기적으로 더 성장할 수 있다고 생각합니다.
             </p>
-            <p className="motivation-text conclusion">
+            <p className="motivation-text">
               저 역시 고객이 신뢰할 수 있는 가격 경험과 운영 구조를 만드는 일에 지속적으로 관심을 가져왔으며, 
               지마켓 Pricing Planning 조직에서도 고객 중심 관점에서 더 나은 커머스 경험을 만드는 데 기여하고자 지원했습니다.
             </p>

@@ -126,12 +126,6 @@ const Projects = () => {
               <h3 className="modal-title">{selectedProject.title}</h3>
               
               <div className="modal-body">
-                <div className="modal-intro">
-                  {selectedProject.detail.intro.split('\n\n').map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                  ))}
-                </div>
-                
                 <div className="modal-section-group">
                   <h4 className="modal-section-title">문제 정의 및 실행 결과</h4>
                   
@@ -149,6 +143,13 @@ const Projects = () => {
                     <span className="badge badge-result">결과</span>
                     <p>{selectedProject.detail.result}</p>
                   </div>
+                </div>
+
+                <div className="modal-intro">
+                  <h4 className="modal-section-title">상세 내용</h4>
+                  {selectedProject.detail.intro.split('\n\n').map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
                 </div>
               </div>
             </motion.div>
