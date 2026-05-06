@@ -1,11 +1,11 @@
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import About from './components/About'
 import Competencies from './components/Competencies'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Motivation from './components/Motivation'
+import EducationSkills from './components/EducationSkills'
 import Footer from './components/Footer'
 
 function App() {
@@ -13,11 +13,11 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <About />
+      <Motivation />
       <Competencies />
       <Experience />
       <Projects />
-      <Motivation />
+      <EducationSkills />
       <Footer />
     </div>
   )

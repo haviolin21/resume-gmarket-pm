@@ -1,0 +1,94 @@
+.edu-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.left-align {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  letter-spacing: -0.02em;
+}
+
+/* Education Items */
+.edu-item {
+  margin-bottom: 40px;
+}
+
+.edu-period {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+  margin-bottom: 5px;
+}
+
+.edu-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.edu-major {
+  font-size: 1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.edu-desc {
+  padding-left: 0;
+  margin: 0;
+}
+
+.edu-desc li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.edu-desc li::before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: var(--text-tertiary);
+}
+
+/* Skill Items */
+.skill-item {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skill-item:last-child {
+  border-bottom: none;
+}
+
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.skill-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .edu-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .left-align {
+    margin-bottom: 30px;
+  }
+}

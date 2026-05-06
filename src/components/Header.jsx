@@ -7,11 +7,10 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">Yuntaek Ha.</div>
         <nav className="nav">
-          <a href="#about">About</a>
+          <a href="#motivation">Motivation</a>
           <a href="#competencies">Competencies</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#motivation">Motivation</a>
         </nav>
       </div>
     </header>
