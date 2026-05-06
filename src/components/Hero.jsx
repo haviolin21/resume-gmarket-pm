@@ -51,15 +51,6 @@ const Hero = () => {
               </a>
             </div>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hero-graphic-wrapper"
-          >
-            <img src="/hero-graphic.png" alt="Data and Growth Graphic" className="hero-graphic" />
-          </motion.div>
         </div>
       </div>
     </section>
