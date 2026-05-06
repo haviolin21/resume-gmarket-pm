@@ -24,8 +24,13 @@ const Motivation = () => {
               특히 이러한 서비스들은 지마켓의 Vision인 ‘상상하는 모든 거래가 가능해지는 플랫폼’을 실제로 실행하고 있는 사례라고 생각했습니다. 
               단순히 상품을 판매하는 것을 넘어 가격, 혜택, 배송, 멤버십까지 고객이 쇼핑 과정에서 체감하는 경험 전반을 지속적으로 연결하고 확장해 나간다는 점이 인상 깊었습니다.
             </p>
+            <blockquote className="gmarket-dna-quote">
+              <span className="quote-icon">“</span>
+              <p>모든 일의 시작과 끝에는 고객이 있어야 한다</p>
+            </blockquote>
+
             <p className="motivation-text">
-              또한 지마켓 DNA 중 <strong className="highlight">‘모든 일의 시작과 끝에는 고객이 있어야 한다’</strong>는 원칙에도 깊이 공감했습니다. 
+              지마켓 DNA 중 이 원칙에 깊이 공감했습니다. 
               결국 커머스에서 가장 중요한 것은 고객이며, 고객 경험을 중심으로 끊임없이 서비스를 개선하는 플랫폼이 장기적으로 더 성장할 수 있다고 생각합니다.
             </p>
             <p className="motivation-text">
